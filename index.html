@@ -5,45 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/626dc97b94.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!--fix these buttons and thier placement*/
-        <div id="page-container">
-            <div id="content-wrap">  
-                <header>
-                    <nav id="navbar">
-                        <ul>
-                            <li>
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>        
-                    </nav>
-                </header><br>--> 
+        <div class="menubar">
+            <a class="home" href="https://pnvshravan-portfolio.vercel.app"><img src="/assets/house.svg" alt="home"></a>
+                <span><a class="menu-link" href="#about">About</a>
+                <a class="menu-link" href="#skills">Skills</a>
+                <a class="menu-link" href="#projects">Projects</a>
+                <a class="menu-link" href="#contact">Contact</a> 
+            </span>     
+        </div>
         <div class="page-container"> 
             <div class="row1">
-                    <div class="about-1">
+                    <div class="photo">
                         <img class="photo-main" src="./assets/profile.jpg">
                     </div>    
                     <div class="typewriter">
-                        <p class="tw-1">I'm</p>
-                        <p class="tw-multiple">lorem</p>
+                        <p class="tw-1">I'm a</p>
+                        <div class="type-write">
+                            <p class="text"></p>
+                        </div>
+                        <p>Enthusiast</p>
                     </div>
             </div>
-            <div class="row2">
+            <hr> 
+            <div class="row2" id="about">
+                <h2>About</h2>
                 <div class="about">
-                    <p>Hello!!</p>
-                    <p>I'm Proddatur Naga Venkata Shravan,a recent graduate with a Bachelor of Engineering degree in Computer Science and Engineering from Visvesvaraya Technological University (VTU), Belagavi.</p>
+                    <p>Hello,</p>
+                    <p>I am <b>Proddatur Naga Venkata Shravan</b>, a recent graduate with a Bachelor of Engineering degree (CSE) from Visvesvaraya Technological University (VTU), Belagavi.</p>
                 </div>
             </div>  
-            <div class="row3">
+            <hr> 
+            <div class="row3" id="skills">
                 <h2>Skills</h2>
                 <div class="skills">
                     <img src="./assets/icons8-python.svg" alt="Python" class="skill-item">
@@ -60,29 +57,34 @@
                     <img src="./assets/mysql-logo-pure.svg" alt="Git" class="skill-item">
                 </div>
             </div>
-            <div class="row4">
+            <hr> 
+            <div class="row4" id="projects">
                 <h2>Projects</h2>
                 <div class="projects">
                     <div class="p1">
-                        <h3 class="p-title"><em>Plant Recognition and Gardening Support System</em></h3>
+                        <h3 class="p-title">Plant Recognition and Gardening Support System</h3>
+                        <p class="p-desc">(Python, FastAPI, ML, YOLOv8, Docker, AWS, REST)</p>
                         <label>Links:</label>
-                        <a class="p-link" href="https://play.google.com/store/apps/details?id=com.miyu.plantai"><i class="fa-brands fa-google-play"></i></a>
-                        <a class="p-link" href="https://ijirt.org/Article?manuscript=165047"><i class="fa-solid fa-book-journal-whills"></i></a>
+                        <a class="p-link" href="https://play.google.com/store/apps/details?id=com.miyu.plantai"><img src="/assets/google-play.svg"></a>
+                        <a class="p-link" href="https://ijirt.org/Article?manuscript=165047"><img src="/assets/book-journal-whills.svg"></a>
                     </div>
                     <div class="p2">
-                        <h3 class="p-title"><em>Unit Converter</em></h3>
+                        <h3 class="p-title">Unit Converter</h3>
+                        <p class="p-desc">(Android SDK, Java)</p>
                         <label>Links:</label>
-                        <a class="p-link" href="https://play.google.com/store/apps/details?id=com.miyu.plantai"><i class="fa-brands fa-github"></i></a>
+                        <a class="p-link" href="https://github.com/pnvshravan/UnitConverter"><img src="/assets/github.svg"></a>
                     </div>
                 </div>
-            </div>     
-            <div class="row5">
-                <div class="social-links">
-                    <a class="s-link" href="https://x.com/pnvshravan"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a class="s-link" href="https://www.linkedin.com/in/pnvshravan"><i class="fa-brands fa-linkedin"></i></a>
-                    <a class="s-link" href="https://github.com/pnvshravan"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
+            </div>    
+            <hr> 
+                <footer id="contact">
+                    <a class="s-link" href="https://x.com/pnvshravan"><img src="/assets/x-twitter.svg"></a>
+                    <a class="s-link" href="https://www.linkedin.com/in/pnvshravan"><img src="/assets/linkedin.svg"></a>
+                    <a class="s-link" href="https://github.com/pnvshravan"><img src="/assets/github.svg"></a>
+                    <a class="s-link" href="https://www.instagram.com/pnv_shravan?igsh=MTNqNGkxY3llNjdoMA=="><img src="/assets/instagram.svg"></a>
+                    <a class="s-link" href="mailto:pnvshravan786@outlook.com"><img src="/assets/envelope-open-text.svg"></a>
+                    <p>v2 &#169 Made by <b>Proddatur Naga Venkata Shravan</b></p>
+            </footer>    
         </div>
     </body>
 </html>

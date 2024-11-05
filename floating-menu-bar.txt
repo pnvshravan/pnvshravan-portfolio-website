@@ -1,0 +1,29 @@
+ <nav class="menubar">
+            <a class="menu-link" href="https://pnvshravan-portfolio.vercel.app"><img src="/assets/house.svg" alt="home"></a>
+            <a class="menu-link" href="#about"><img src="/assets/address-card.svg" alt="about"></a>
+            <a class="menu-link" href="#skills"><img src="/assets/file-lines.svg" alt="Skills"></a>
+            <a class="menu-link" href="#projects"><img src="/assets/diagram-project.svg"></a>
+            <a class="menu-link" href="#contact"><img src="/assets/message.svg" alt="Contact"></a>       
+</nav>
+
+/*css-rules*/
+nav img{
+    height: 20px;
+    width: 20px;    
+    background-color: var(--color-2);
+}
+nav{
+    border: 3px solid var(--color-1);
+    display: fixed;
+    width: fit-content;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    left:40%;
+}
+nav, nav a, nav img{
+    background-color: var(--color-2);
+}
